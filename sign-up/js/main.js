@@ -1,7 +1,10 @@
-(function($) {
+(function ($) {
 
-  $('#reset').on('click', function(){
-      $('#register-form').reset();
-  });
+    $('#date_picker_birth').datepicker(
+        {
+            language: "vi",
+            autoclose: true
+        }
+    );
 
 })(jQuery);
