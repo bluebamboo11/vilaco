@@ -1,108 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V1</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="../vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="../vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="stylesheet" type="text/css" href="../common/css/style.css">
-<!--===============================================================================================-->
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Login V1</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/bootstrap4/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="../vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../vendor/toast/jquery.toast.min.css">
+    <!--===============================================================================================-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-<body>
-	
-	<div class="limiter">
-		<div class="container-login100 background">
-			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-					<img src="images/img-01.png" alt="IMG">
-				</div>
+<body class="background">
 
-				<form class="login100-form validate-form">
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <div class="login100-pic js-tilt" data-tilt>
+                <img src="images/img-01.png" alt="IMG">
+            </div>
+
+            <form class="login100-form validate-form">
 					<span class="login100-form-title">
 						Đăng nhập thành viên
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Tài khoản">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
+                <div class="wrap-input100 validate-input" data-validate="Email không thể để trống: ex@abc.xyz">
+                    <input class="input100" type="text" name="email" placeholder="Tài khoản">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
 							<i class="fa fa-envelope" aria-hidden="true"></i>
 						</span>
-					</div>
+                </div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Mật khẩu">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
+                <div class="wrap-input100 validate-input" data-validate="Mật khẩu không thể để trống">
+                    <input class="input100" type="password" name="pass" placeholder="Mật khẩu">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
 						</span>
-					</div>
-					
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Đăng Nhập
-						</button>
-					</div>
+                </div>
 
-					<div class="text-center p-t-12">
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                        Đăng Nhập
+                    </button>
+                </div>
+
+                <div class="text-center p-t-12">
 						<span class="txt1">
 							Quên
 						</span>
-						<a class="txt2" href="#">
-							Tài khoản / Mật khẩu?
-						</a>
-					</div>
+                    <span class="txt2" href="#exampleModalCenter"data-target="#exampleModalCenter" data-toggle="modal">
+                        Tài khoản / Mật khẩu?
+                    </span>
+                </div>
 
-					<div class="text-center p-t-136">
-						<a class="txt2" href="../sign-up/sign-in.html">
-							Tạo tài khoản mới
-							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-						</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
+                <div class="text-center p-t-136">
+                    <a class="txt2" href="../sign-up/sign-in.html">
+                        Tạo tài khoản mới
+                        <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="border: none">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Gửi email tạo lại mật khẩu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="wrap-input100 validate-input"  data-validate="Email hợp lệ: ex@abc.xyz">
+                    <input class="input100" type="text" id="input-reset" name="email" placeholder="Nhập email tài khoản">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+                </div>
+            </div>
+            <div class="modal-footer" style="border: none">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+                <button type="button" id="btn-reset" class="btn btn-success">Xác Nhận</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-
-
-	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-firestore.js"></script>
-<!--===============================================================================================-->	
-	<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-firestore.js"></script>
 <!--===============================================================================================-->
-	<script src="../vendor/bootstrap/js/popper.js"></script>
-	<script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script src="../vendor/select2/select2.min.js"></script>
+<script src="../vendor/bootstrap/js/popper.js"></script>
+<script src="../vendor/bootstrap4/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-	<script src="../vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
+<script src="../vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
-	<script src="../common/js/firebase.js"></script>
-	<script src="js/main.js"></script>
+<script src="../vendor/tilt/tilt.jquery.min.js"></script>
+<script src="../vendor/toast/jquery.toast.min.js"></script>
+<script src="../common/js/firebase.js"></script>
+<script>
+    $('.js-tilt').tilt({
+        scale: 1.1
+    })
+</script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
 
 </body>
 </html>

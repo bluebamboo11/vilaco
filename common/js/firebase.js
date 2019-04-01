@@ -36,6 +36,14 @@ function addStudent(id,use,callback) {
             console.error("Error writing document: ", error);
         });
 }
+function sendPasswordResetEmail(email,callback,callError) {
+    firebase.auth().sendPasswordResetEmail(email).then(function() {
+        callback()
+    }).catch(function(error) {
+        callError(error.code)
+    });
+
+}
 function getUse() {
     var user = firebase.auth().currentUser;
     if(user){

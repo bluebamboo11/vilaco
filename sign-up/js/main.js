@@ -30,7 +30,7 @@
     });
 
     function saveError(code) {
-        endLoad()
+        endLoad();
         switch (code) {
             case 'auth/email-already-in-use':
                 $.toast(initToast("Email đã được sử dụng. Vui lòng sử dụng email khác"));
@@ -54,7 +54,8 @@
          position:'top-left',
          heading:'Lỗi tạo tài khoản',
          icon: 'error',
-         showHideTransition: 'slide'
+         showHideTransition: 'slide',
+         stack: false
      }
     }
     function startLoad() {
@@ -67,9 +68,9 @@
    }
 
     function CheckPassword(inputtxt) {
-        var paswd = /^[a-zA-Z0-9!@#$%^&*]{7,20}$/;
+        var paswd = /^[a-zA-Z0-9!@#$%^&*]{8,20}$/;
         if (inputtxt.value.match(paswd)) {
-            $(inputtxt).removeClass('error-pass')
+            $(inputtxt).removeClass('error-pass');
             isValid = true;
         } else {
             isValid = false;

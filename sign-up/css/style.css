@@ -208,16 +208,7 @@ label {
     display: block;
     cursor: pointer;
 }
-.jq-toast-single h2{
-    font-size: 16px!important;
-}
-.jq-toast-single{
-    font-size: 15px;
-    line-height: 20px !important;
-}
-.jq-toast-wrap{
-    width: 350px;
-}
+
 .check {
     display: inline-block;
     position: absolute;
