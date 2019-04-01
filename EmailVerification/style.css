@@ -38,3 +38,6 @@ button{
     top: 5px;
     left: 44px;
 }
+#button-send{
+    border-radius: 30px;
+}

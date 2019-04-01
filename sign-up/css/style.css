@@ -104,6 +104,7 @@ html {
 }
 
 body {
+    overflow: auto;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -361,6 +362,8 @@ select {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: auto;
+    width: 100%;
 }
 .fa-eye-slash{
     display: none;
@@ -394,21 +397,32 @@ select {
     -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
 }
-@media screen and (max-width: 992px) {
-    .container {
-        width: calc(100% - 40px);
-        max-width: 100%;
-    }
 
-    .signup-content {
-        flex-direction: column;
-        -moz-flex-direction: column;
-        -webkit-flex-direction: column;
-        -o-flex-direction: column;
-        -ms-flex-direction: column;
+@media screen and (max-width: 1400px) {
+    .container-fu{
+        width: 1000px;
     }
-
     .signup-img, .signup-form {
+        width: 50%;
+        height: 670px;
+        overflow: auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .signup-img{
+        display: none;
+    }
+    .container-fu{
+        width: 95%;
+        max-width: 700px;
+    }
+    .signup-form {
+        width: 100%;
+        height: auto;
+    }
+    .main{
+        overflow: auto;
         width: 100%;
     }
 }
@@ -419,47 +433,6 @@ select {
     }
 }
 
-@media screen and (max-width: 575px) {
-    .form-row {
-        flex-direction: column;
-        -moz-flex-direction: column;
-        -webkit-flex-direction: column;
-        -o-flex-direction: column;
-        -ms-flex-direction: column;
-        margin: 0px;
-    }
 
-    .form-row .form-group {
-        width: 100%;
-        padding: 0px;
-    }
-
-    .radio-label {
-        padding-right: 22px;
-    }
-
-    .form-radio-item {
-        margin-right: 25px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .form-radio {
-        flex-direction: column;
-        -moz-flex-direction: column;
-        -webkit-flex-direction: column;
-        -o-flex-direction: column;
-        -ms-flex-direction: column;
-    }
-
-    .submit {
-        width: 100%;
-    }
-
-    #reset {
-        margin-right: 0px;
-        margin-bottom: 10px;
-    }
-}
 
 
