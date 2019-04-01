@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../common/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="../vendor/bootstrap4/bootstrap.min.css" rel="stylesheet">
+    <script src="../vendor/jquery/jquery-3.2.1.min.js"></script>
+</head>
+<body class="background">
+<div class="main">
+    <div class="card">
+        <p>Một email đã được gửi tới <span class="email"></span></p>
+        <p>Hãy vào đường liên kết trong email xác minh để kết thúc việc tạo tài khoản.</p>
+        <div class="button-wrap">
+            <button type="button" id="button-send" class="btn btn-primary" disabled>Gửi lại email</button>
+            <div class="loading-button">
+                <div class="spinner-border text-warning" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-firestore.js"></script>
+<script src="../common/js/firebase.js"></script>
+<script src="../vendor/bootstrap4/bootstrap.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

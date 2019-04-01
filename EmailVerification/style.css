@@ -1,0 +1,40 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.main{
+    width: 80%;
+    max-width: 1200px;
+
+}
+.card{
+    border:1px solid #808080;
+    position: relative;
+   width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    padding:10px 30px 120px 30px ;
+    margin-top: 60px;
+    font-size: 22px;
+}
+.email{
+    color: #1f59ff;
+}
+.button-wrap{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+button{
+    font-size: 20px!important;
+}
+.loading-button{
+    display: none ;
+    position: absolute;
+    top: 5px;
+    left: 44px;
+}
